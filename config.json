@@ -1,0 +1,21 @@
+{
+    "prompt_generation_prefix": "generate a json list containing prompts to generate images with ai, keep the prompts short e.g. three sentences and focus on describing what will be seen,  do not describe styles or details, the prompt will be optimized later,  Generate the list of prompts to genereate the images given the following user input:",
+    "prompt_generation_suffix": "The list should contain exactly the following number of prompts: ",
+    "image_optimization_prefix": "optimize the following prompt to get the final prompt to generate an image with ai, ouput exactly one prompt that can be directly used to generate ONE image with ai, the output language should be english to get the best results, the prompt should be detailed and descriptive ,the prompt should include details about lighting, colors, composition, mood, style, and any other relevant details, the prompt should follow best principles to greate high quality images with ai, the users style specifications are:",
+    "image_optimization_suffix": "The output should be only one prompt to generate an ai image, do not include any other text.",
+    "image_description_generation_prefix": "Create a description for an image. follow the following guidelines for the creation of the description:",
+    "image_description_generation_suffix": "Create the description in the language:",
+    "max_tries": 1,
+    "user_input": {
+        "language": "german",
+        "num_prompts": 52,
+        "num_images_per_prompt": 4,
+        "image_content_description": "Zeige Tiere die lustige alltägliche Sachen machen wie bsp. ein Pferd, dass Fahrrad fährt und dabei einen super kleinen helm trägt und kurz davor ist einen Unfall zu bauen, weil es nicht bremsen kann. Baue gerne die Charakteristika als Hindernis des Tieres ein alltägliche Aktivitäten eines Menschen zu tun, wie beispielsweise Zähne putzen oder auch malen, wobei aber immer Probleme auftreten sollen bsp. durch fehlende Hände oder ähnliches. Zeige auch nicht nur typische Tiere wie Hunde und Katzen sondern gezielt Tiere die besonders sind wie - Schottisches Hochlandrind, Blauwal, Hai, Kugelfisch, Quokka (Kurzschwanzkänguru), Axolotl, Fennek (Wüstenfuchs), Faultier, Chamäleon, Schnabeltier, Alpaka, . Sei gerne kreativ und denke dir weitere lustige Szenen aus. Zeige die Tiere aber in jedem Fall sehr realistisch und stelle wirklich kreative Szenen vor.",
+        "image_style_description": "generate a hyper-realistic image, the image should be funny, the image should show animals hyper realistic with their correct proportions, skin color, and textures, but behaving like humans in a funny way, the image should be humorous , the animals should have lively expressions, real looking eyes, showing them engaged in the described activities, the animals should be shown very detailed and realistic, with attention to fur/skin texture, lighting, and environment, the animals should behave like humans in a funny way, the images should be in 8k resolution",
+        "image_desription_description": "Die Beschreibungen sollen einen bis drei Sätze lang sein und lustig beschreiben, was die Tiere in dem Bild machen. Gerne mit einem kleinen Wortwitz oder Reimen",
+        "text_generation_model": "gemini-2.5-flash",
+        "image_generation_model": "gemini-2.5-flash-image",
+        "project_name": "AnimalsDoingFunnyThings-3",
+        "username": "fp-linux"
+    }
+}

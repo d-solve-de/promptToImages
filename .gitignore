@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+generated_images/
+*.log
+notes.md
+notes/
+generated_prompts/
+users/
+venv/
