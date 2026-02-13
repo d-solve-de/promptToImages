@@ -22,7 +22,14 @@
 <h3 align="center">Prompt to Images</h3>
 
   <p align="center">
-    This project automates the creation of a children's image book using generative AI models from Google Vertex AI. It generates images and descriptions based on prompts, compiles them into a PDF, and prepares it for printing.
+    This project automates the creation of a children's image book using generative AI models from Google Vertex AI. It generates images and descriptions based on prompts, compiles them into a PDF, and prepares it for printing. At the moment the project is implemented only in a jupyter notebook and run only locally. 
+The project is currently on hold and will not be pursued further. It was a small Christmas gift project.
+The project can be used to quickly create a small MVP.
+However, for an end product, an interactive approach with an AI agent is preferable, where you simply tell it to generate 3 images with ... instead of using a deterministic pipeline. This allows for easier customization of the photos. In addition, the market is flooded with products that support this use case and allow for better interchangeability of AI models.
+
+
+
+Translated with DeepL.com (free version)
 <!--    <br />
     <a href="https://github.com/d-solve-de/promptToImages"><strong>Explore the docs »</strong></a>
     <br />
@@ -78,9 +85,6 @@ This project automates the creation of a children's image book using generative 
 
 * [![Python][Python]][https://www.python.org/]
 * [![GenAI][GenAI]][https://cloud.google.com/genai/docs]
-* [![Flask][Flask]][https://flask.palletsprojects.com/]
-* [![Keycloak][Keycloak]][https://www.keycloak.org/]
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,14 +157,14 @@ Program Flowchart:
 ```mermaid
 flowchart TD
     %% Nodes
-        B("Prompt Chat AI to create list of prompts")
-        D("Optimize each prompt for better results, therefore add Prefix and suffix to prompts")
-        E("Create and save multiple Images for each prompt")
-        F("Write a description for each image based on the prompt and save them in a text file")
-        G("Manually review and select best images from generated ones and add them to special folder")
-        H("Map descriptions to selected images")
-        I("Create final file with images and descriptions as PDF")
-        J("Print the book online")
+        B("Prompt Chat AI to create list of prompts - manual")
+        D("Optimize each prompt for better results, therefore add Prefix and suffix to prompts - automatically")
+        E("Create and save multiple Images for each prompt - automatically")
+        F("Write a description for each image based on the prompt and save them in a text file - automatically")
+        G("Manually review and select best images from generated ones and add them to special folder - manual")
+        H("Map descriptions to selected images - automatically")
+        I("Create final file with images and descriptions as PDF - automatically")
+        J("Print the book online - manual")
     %% Edge connections between nodes
     B --> D --> E --> F --> G --> H --> I --> J
 ```
@@ -171,7 +175,7 @@ flowchart TD
 ## Roadmap
 
 - [ ] add status bar whereever it makes sense - use a library to show progress
-- [ ] write prompts to file after each processing so progress is stored secure to save time and allow interruptions
+- [x] write prompts to file after each processing so progress is stored secure to save time and allow interruptions
 - [ ] write own log files per user/ project to allow better debugging
 - [ ] add the option to optimize multiple prompts at a time but allow the user to configure this parameter
 - [ ] add the option to continue if one prompt/ image makes problems - delete image from descriptions and generation process
@@ -182,7 +186,7 @@ flowchart TD
 - [ ] Add ability to create different types of books (e.g. recipe books, travel guides, etc.)
 - [ ] Use OpenRouter instead of Vertex AI
 - [ ] Automatically list all available models
-- [ ] Use Keycloak for Login
+- [DEPRECATED] Use Keycloak for Login
 - [ ] Add cost transparency and Billing 
 
 See the [open issues](https://github.com/d-solve-de/promptToImages/issues) for a full list of proposed features (and known issues).
