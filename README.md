@@ -22,7 +22,7 @@
 <h3 align="center">Prompt to Images</h3>
 </div>
 
-    This project automates the creation of a children's image book using generative AI models from Google Vertex AI. It generates images and descriptions based on prompts, compiles them into a PDF, and prepares it for printing. 
+This project automates the creation of a children's image book using generative AI models from Google Vertex AI. It generates images and descriptions based on prompts, compiles them into a PDF, and prepares it for printing. 
 - At the moment the project is implemented only in a jupyter notebook and run only locally. 
 - The project is currently on hold and will not be pursued further. It was a small Christmas gift project. The project can be used to quickly create a small MVP.
 - However, for an end product, an interactive approach with an AI agent is preferable, where you simply tell it to generate 3 images with ... instead of using a deterministic pipeline. This allows for easier customization of the photos. In addition, the market is flooded with products that support this use case and allow for better interchangeability of AI models.
